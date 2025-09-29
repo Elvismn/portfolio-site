@@ -3,67 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elvis Mong'eri - Portfolio</title>
+  <title>Elvis Mongeri - Portfolio</title>
   <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
- 
-  <!-- Header -->
+  <!-- Navbar -->
   <header>
-    <nav>
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
-      <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
+    <nav class="navbar">
+      <div class="logo">Elvis Mongeri</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="leadership.html">Leadership</a></li>
-        <li><a href="affiliations.html">Affiliations</a></li>
-        <li><a href="trainings.html">Trainings</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="affiliations.html">Affiliations</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
-    <h1>Elvis Mong'eri</h1>
-    <h2>Mechanical Engineer | Leader | Visionary</h2>
   </header>
 
-  <!-- Intro Section -->
-  <section id="intro">
-    <p>
-      My name is <strong>Elvis Mong'eri</strong>. I am an aspiring 
-      <strong>Mechanical Engineer</strong> and a passionate 
-      <strong>Physics enthusiast</strong>.
-    </p>
-    <p>
-      Beyond academics, I find joy in <strong>gospel music</strong> where I love playing instruments, 
-      as well as in <strong>field hockey</strong>, <strong>board games</strong>, 
-      and <strong>exploring new places</strong>.
-    </p>
-  </section>
-
-  <!-- Projects Preview Section -->
-  <section id="projects-preview">
-    <h2>Featured Project</h2>
-    <div class="project-preview-card">
-      <img src="assets/images/ElimWebScreenshot.png" alt="Elim Group of Schools Website Screenshot">
-
-      <div class="project-preview-content">
-        <h3>Elim Group of Schools Website</h3>
-        <p>
-          📘 A responsive multi-page website built with HTML5, CSS3, and JavaScript, 
-          aligning with <strong>SDG 4: Quality Education</strong>. 
-          It highlights accessibility, responsiveness, and interactivity, 
-          and is deployed on both Netlify and GitHub Pages.
-        </p>
-        <a href="projects.html" class="btn">View Project</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <div class="intro-card">
+          <h1>Hello, I'm <span>Elvis Mongeri</span></h1>
+          <p>Aspiring Mechanical Engineer & Software Developer</p>
+          <a href="about.html" class="btn">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Elvis Mong'eri</p>
+    <p>&copy; 2025 Elvis Mongeri. All Rights Reserved.</p>
   </footer>
-  <script src="Scripts/script.js"></script>
+
+  <script src="Scripts/script.js" defer></script>
 </body>
 </html>
