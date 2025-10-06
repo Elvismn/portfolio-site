@@ -1,28 +1,31 @@
-// Hamburger Menu Toggle
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+// ---------------- HAMBURGER MENU ----------------
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navLinks.classList.toggle('active');
-});
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  }
 
-// Scroll animations (simple fade-in effect)
-const faders = document.querySelectorAll('.container, .project-card, .intro, .hero-content');
+  // ---------------- ANIMATIONS ----------------
+  const faders = document.querySelectorAll(".card, .gallery img, section h2");
 
-const appearOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px"
-};
+  const appearOptions = {
+    threshold: 0.2,
+    rootMargin: "0px 0px -50px 0px"
+  };
 
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add("fade-in");
-    appearOnScroll.unobserve(entry.target);
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("appear");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
   });
-}, appearOptions);
-
-faders.forEach(fader => {
-  appearOnScroll.observe(fader);
 });
