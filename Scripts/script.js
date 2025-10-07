@@ -29,6 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
     appearOnScroll.observe(fader);
   });
 });
+ 
+//gallery autoresize
+document.querySelectorAll('.affiliations-gallery img').forEach(img => {
+  img.style.width = '180px';
+  img.style.height = '180px';
+  img.style.objectFit = 'contain';
+});
+
 // Form Interactivity
 const form = document.getElementById("contact-form");
 const nameInput = document.getElementById("name");
@@ -72,3 +80,5 @@ form.addEventListener("submit", function(event) {
     colour = "blue";
     event.target.style.borderColor = colour;
   });
+
+  
