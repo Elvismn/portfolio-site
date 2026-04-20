@@ -1,0 +1,31 @@
+template for projects
+<!-- Project X: [Project Name] -->
+<div class="project-card-enhanced">
+  <div class="project-image">
+    <img src="assets/images/[your-image].jpg" alt="[Project Name]">
+    <div class="project-overlay">
+      <span class="project-status">[Live/Completed/In Development]</span>
+    </div>
+  </div>
+  <div class="project-content">
+    <h3>[Project Name]</h3>
+    <p class="project-description">[Brief description of the project, what problem it solves, and your role]</p>
+    <div class="project-tech-stack">
+      <span>[Tech 1]</span>
+      <span>[Tech 2]</span>
+      <span>[Tech 3]</span>
+      <span>[Tech 4]</span>
+    </div>
+    <div class="project-features">
+      <ul>
+        <li>📱 [Key feature 1]</li>
+        <li>🎨 [Key feature 2]</li>
+        <li>🚀 [Key feature 3]</li>
+      </ul>
+    </div>
+    <div class="project-links-enhanced">
+      <a href="[live-link]" target="_blank" class="btn-small">🌍 Live Site</a>
+      <a href="[github-link]" target="_blank" class="btn-small secondary">💻 GitHub</a>
+    </div>
+  </div>
+</div>

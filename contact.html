@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me</title>
+  <title>Contact | Elvis Mong'eri</title>
   <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">Contact Me</div>
+      <div class="logo">Let's Connect</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -28,33 +28,106 @@
   </header>
 
   <main>
-    <section class="contact-details">
-      <h2>Get in Touch</h2>
-      <p><strong>Email:</strong> <a href="mailto:elvismongeri@gmail.com">elvismongeri@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+254703941488">+254 703 941 488</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/elvis-mongeri-0a6252318/" target="_blank" rel="noopener noreferrer">linkedin.com/in/elvis-mongeri</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/Elvismn" target="_blank" rel="noopener noreferrer">github.com/Elvismn</a></p>
+    <!-- Hero Section -->
+    <section class="contact-hero">
+      <div class="contact-hero-content">
+        <h1>Let's Connect</h1>
+        <p>I'm always open to meaningful conversations, collaborations, and opportunities. Whether you have a project in mind, want to discuss tech and engineering, or simply want to say hello—I'd love to hear from you.</p>
+      </div>
     </section>
 
-    <section class="contact-form">
-      <h2>Send Me a Message</h2>
-      <form>
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <!-- Contact Cards Section -->
+    <section class="contact-cards-section">
+      <h2>Reach Out</h2>
+      <div class="contact-cards-grid">
+        
+        <!-- Email Card -->
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <p class="contact-detail">elvismongeri@gmail.com</p>
+          <a href="mailto:elvismongeri@gmail.com" class="contact-link">Send an Email →</a>
+        </div>
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <!-- Phone Card -->
+        <div class="contact-card">
+          <div class="contact-icon">📱</div>
+          <h3>Phone</h3>
+          <p class="contact-detail">+254 703 941 488</p>
+          <a href="tel:+254703941488" class="contact-link">Call or Text →</a>
+        </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        <!-- Location Card -->
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h3>Location</h3>
+          <p class="contact-detail">Nairobi, Kenya</p>
+          <p class="contact-subdetail">Available for remote & on-site opportunities</p>
+        </div>
 
-        <button type="submit">Send Message</button>
-      </form>
+      </div>
     </section>
+
+    <!-- Social Connect Section -->
+    <section class="social-section">
+      <h2>Connect Online</h2>
+      <p class="social-intro">Find me on these platforms—I'm most active on LinkedIn and GitHub</p>
+      <div class="social-grid">
+        
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/elvis-mongeri-0a6252318/" target="_blank" rel="noopener noreferrer" class="social-card">
+          <div class="social-icon">🔗</div>
+          <h3>LinkedIn</h3>
+          <p>Connect professionally</p>
+          <span class="social-handle">@elvis-mongeri</span>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/Elvismn" target="_blank" rel="noopener noreferrer" class="social-card">
+          <div class="social-icon">🐙</div>
+          <h3>GitHub</h3>
+          <p>Explore my code</p>
+          <span class="social-handle">@Elvismn</span>
+        </a>
+
+        <!-- Twitter/X -->
+        <a href="#" target="_blank" rel="noopener noreferrer" class="social-card">
+          <div class="social-icon">🐦</div>
+          <h3>Twitter/X</h3>
+          <p>Follow my journey</p>
+          <span class="social-handle">@elvismongeri</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Availability Section -->
+    <section class="availability-section">
+      <div class="availability-card">
+        <div class="availability-icon">⚡</div>
+        <h3>Open for Opportunities</h3>
+        <p>I'm currently seeking internships, collaborations, and projects where I can apply my skills in software development, engineering, and leadership. If you have an opportunity or idea, let's talk!</p>
+        <div class="availability-tags">
+          <span>Software Development</span>
+          <span>Mechanical Engineering</span>
+          <span>Leadership Roles</span>
+          <span>Tech Collaborations</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Response Note -->
+    <section class="response-note">
+      <div class="note-content">
+        <span class="note-icon">⏱️</span>
+        <p>I typically respond within 24-48 hours. Looking forward to connecting with you!</p>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 Elvis Mongeri. All Rights Reserved.</p>
+    <p>&copy; 2025 Elvis Mong'eri. All Rights Reserved.</p>
   </footer>
   <script src="Scripts/script.js"></script>
 </body>
