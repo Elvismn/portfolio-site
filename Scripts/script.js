@@ -172,3 +172,13 @@ window.addEventListener("resize", function() {
 
 // Trigger resize event on load to set initial sizes
 window.dispatchEvent(new Event("resize"));
+
+// ==================== TOGGLE DARK MODE ====================
+// Optional: Add dark mode to the site
+
+const darkmodeToggle = document.querySelector("#darkmode-toggle");
+if (darkmodeToggle) {
+  darkmodeToggle.addEclickListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  }); 
+}
